@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace AzureWebAPI
 {
     public class Program
@@ -5,7 +7,17 @@ namespace AzureWebAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<ApplicationDBContext>(options =>
+            {
+                options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        sqlServerOptions => sqlServerOptions.EnableRetryOnFailure(
+            maxRetryCount: 3
+            ));
 
+            }); 
+       
+            
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAllOrigins",

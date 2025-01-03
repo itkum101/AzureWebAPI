@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "AzureWebAPI.Controllers.AccountController",
+    "Method": "AddUser",
+    "RelativePath": "Account/AddUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "AzureWebAPI.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AzureWebAPI.Controllers.AccountController",
+    "Method": "GetAllUser",
+    "RelativePath": "Account/GetAllUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AzureWebAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
