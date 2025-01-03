@@ -7,8 +7,17 @@ namespace AzureWebAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSubdomainsAndLocalhost",
+                    policy =>
+                    {
+                        policy.WithOrigins("https://*.subedimukti.com.np", "http://localhost", "https://localhost")
+                            .AllowAnyMethod()
+                            .AllowAnyHeader()
+                            .AllowCredentials();  // Allow cookies if needed
+                    });
+            });
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
