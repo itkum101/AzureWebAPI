@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "S1lW6vQSZFoHVYv7PmnPCX2ry2juMuAauowfxbe0tT4=",
+  "Source": "AzureWebAPI",
+  "BasePath": "_content/AzureWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
