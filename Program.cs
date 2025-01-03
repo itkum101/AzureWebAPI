@@ -8,13 +8,12 @@ namespace AzureWebAPI
 
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowSubdomainsAndLocalhost",
+                options.AddPolicy("AllowAllOrigins",
                     policy =>
                     {
-                        policy.WithOrigins("https://usermgmt.subedimukti.com.np", "http://localhost", "https://localhost")
+                        policy.AllowAnyOrigin()  // Allow all origins
                             .AllowAnyMethod()
-                            .AllowAnyHeader()
-                            .AllowCredentials();  // Allow cookies if needed
+                            .AllowAnyHeader();
                     });
             });
 
@@ -30,20 +29,8 @@ namespace AzureWebAPI
                 app.UseSwaggerUI();
             }
 
-            // Handle the preflight request with proper headers
-            app.Use(async (context, next) =>
-            {
-                if (context.Request.Method == "OPTIONS")
-                {
-                    context.Response.Headers.Add("Access-Control-Allow-Origin", context.Request.Headers["Origin"]); // Reflecting the Origin header dynamically
-                    context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-                    context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
-                    context.Response.Headers.Add("Access-Control-Allow-Credentials", "true");  // Allow credentials
-                    context.Response.StatusCode = 204; // No content
-                    return;
-                }
-                await next();
-            });
+            // Apply the new CORS policy
+            app.UseCors("AllowAllOrigins");
 
             app.UseHttpsRedirection();
             app.UseAuthorization();
