@@ -32,6 +32,19 @@ namespace AzureWebAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Method == "OPTIONS")
+                {
+                    // Handle the preflight request
+                    context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
+                    context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+                    context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
+                    context.Response.StatusCode = 204;
+                    return;
+                }
+                await next();
+            });
 
             app.UseHttpsRedirection();
 
