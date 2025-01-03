@@ -12,12 +12,13 @@ namespace AzureWebAPI
                 options.AddPolicy("AllowSubdomainsAndLocalhost",
                     policy =>
                     {
-                        policy.WithOrigins("https://*.subedimukti.com.np", "http://localhost", "https://localhost")
+                        policy.WithOrigins("https://usermgmt.subedimukti.com.np", "http://localhost", "https://localhost")  // Specific origins
                             .AllowAnyMethod()
                             .AllowAnyHeader()
                             .AllowCredentials();  // Allow cookies if needed
                     });
             });
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
