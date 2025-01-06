@@ -2,6 +2,10 @@ using AzureWebAPI.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+<<<<<<< HEAD
+using StackExchange.Redis;
+=======
+>>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
 using System.Security.Claims;
 using System.Text;
 
@@ -22,8 +26,28 @@ namespace AzureWebAPI
 
             });
 
+<<<<<<< HEAD
+            builder.Services.AddStackExchangeRedisCache(options =>
+
+            {
+                options.Configuration = builder.Configuration.GetValue<String>("RedisURL"); 
+            });
+
+            // Register the Redis connection multiplexer as a singleton service
+            // This allows the application to interact directly with Redis for advanced scenarios
+            builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+                // Establish a connection to the Redis server using the configuration from appsettings.json
+                ConnectionMultiplexer.Connect(builder.Configuration.GetValue<String>("RedisURL"))); 
+
+
+
+            builder.Services.AddScoped<TokenService>();
+            // Register Response Caching services
+            builder.Services.AddResponseCaching();
+=======
             builder.Services.AddScoped<TokenService>();
 
+>>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
 
             builder.Services.AddCors(options =>
             {

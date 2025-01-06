@@ -64,6 +64,13 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+<<<<<<< HEAD
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+=======
+>>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[7.2.0, )"

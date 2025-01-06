@@ -2,7 +2,11 @@
   {
     "ContainingType": "AzureWebAPI.Controllers.AccountController",
     "Method": "AddUser",
+<<<<<<< HEAD
+    "RelativePath": "api/Account/AddUser",
+=======
     "RelativePath": "Account/AddUser",
+>>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -18,7 +22,11 @@
   {
     "ContainingType": "AzureWebAPI.Controllers.AccountController",
     "Method": "GetAllUser",
+<<<<<<< HEAD
+    "RelativePath": "api/Account/GetAllUser",
+=======
     "RelativePath": "Account/GetAllUser",
+>>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -45,7 +53,11 @@
     "ContainingType": "AzureWebAPI.Controllers.AuthController",
     "Method": "RefreshToken",
     "RelativePath": "api/Auth/RefreshToken",
+<<<<<<< HEAD
+    "HttpMethod": "POST",
+=======
     "HttpMethod": "",
+>>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -74,6 +86,66 @@
     "ReturnTypes": []
   },
   {
+<<<<<<< HEAD
+    "ContainingType": "AzureWebAPI.Controllers.RedisCacheController",
+    "Method": "ClearCacheKeyEntryByKey",
+    "RelativePath": "api/RedisCache/ClearCacheKeyEntryByKey/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AzureWebAPI.Controllers.RedisCacheController",
+    "Method": "DeleteAllCachedKeysAndValues",
+    "RelativePath": "api/RedisCache/DeleteAllCachedKeysAndValues/all",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AzureWebAPI.Controllers.RedisCacheController",
+    "Method": "GetAllCachedKeysAndValues",
+    "RelativePath": "api/RedisCache/GetAllCachedKeysAndValues/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AzureWebAPI.Controllers.RedisCacheController",
+    "Method": "SetKeyValue",
+    "RelativePath": "api/RedisCache/SetKeyValue",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "value",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+=======
+>>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
     "ContainingType": "AzureWebAPI.Controllers.UserController",
     "Method": "GetAllUsers",
     "RelativePath": "api/User/GetAllUsers",

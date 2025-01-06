@@ -172,3 +172,9 @@ C:\Users\subed\source\repos\AzureWebAPI\obj\Debug\net8.0\refint\AzureWebAPI.dll
 C:\Users\subed\source\repos\AzureWebAPI\obj\Debug\net8.0\AzureWebAPI.pdb
 C:\Users\subed\source\repos\AzureWebAPI\obj\Debug\net8.0\AzureWebAPI.genruntimeconfig.cache
 C:\Users\subed\source\repos\AzureWebAPI\obj\Debug\net8.0\ref\AzureWebAPI.dll
+<<<<<<< HEAD
+C:\Users\subed\source\repos\AzureWebAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\subed\source\repos\AzureWebAPI\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\subed\source\repos\AzureWebAPI\bin\Debug\net8.0\StackExchange.Redis.dll
+=======
+>>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
