@@ -14,6 +14,6 @@ namespace AzureWebAPI
         }
 
        public DbSet<User> Users { get; set;  }
-
+        public DbSet<Refreshtoken> Refreshtokens { get; set; }
     }
 }
