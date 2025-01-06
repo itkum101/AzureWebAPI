@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AzureWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+583415174e1d1000c8f1d14ca9ef96b75f81c536")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ccd5146e19c3dae2165d8efd7de6de5cf9eea43")]
 [assembly: System.Reflection.AssemblyProductAttribute("AzureWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AzureWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

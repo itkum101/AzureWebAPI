@@ -7,7 +7,7 @@ namespace AzureWebAPI.Controllers
 {
 
     [ApiController]
-    [Route("[controller]/[action]")]
+    [Route("api/[controller]/[action]")]
     public class AccountController : ControllerBase
     {
 
