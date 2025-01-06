@@ -5,11 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-<<<<<<< HEAD
-    "/api/Account/AddUser": {
-=======
     "/Account/AddUser": {
->>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
       "post": {
         "tags": [
           "Account"
@@ -40,11 +36,7 @@
         }
       }
     },
-<<<<<<< HEAD
-    "/api/Account/GetAllUser": {
-=======
     "/Account/GetAllUser": {
->>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
       "get": {
         "tags": [
           "Account"
@@ -87,151 +79,6 @@
         }
       }
     },
-<<<<<<< HEAD
-    "/api/Auth/RefreshToken": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RefreshTokenRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RefreshTokenRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RefreshTokenRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Auth/RevokeToken": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RefreshTokenRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RefreshTokenRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RefreshTokenRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/RedisCache/GetAllCachedKeysAndValues/all": {
-      "get": {
-        "tags": [
-          "RedisCache"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/RedisCache/DeleteAllCachedKeysAndValues/all": {
-      "delete": {
-        "tags": [
-          "RedisCache"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/RedisCache/ClearCacheKeyEntryByKey/{key}": {
-      "delete": {
-        "tags": [
-          "RedisCache"
-        ],
-        "parameters": [
-          {
-            "name": "key",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/RedisCache/SetKeyValue": {
-      "post": {
-        "tags": [
-          "RedisCache"
-        ],
-        "parameters": [
-          {
-            "name": "key",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": { }
-            },
-            "text/json": {
-              "schema": { }
-            },
-            "application/*+json": {
-              "schema": { }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-=======
->>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
     "/api/User/GetAllUsers": {
       "get": {
         "tags": [
@@ -332,22 +179,6 @@
         },
         "additionalProperties": false
       },
-<<<<<<< HEAD
-      "RefreshTokenRequest": {
-        "required": [
-          "refreshToken"
-        ],
-        "type": "object",
-        "properties": {
-          "refreshToken": {
-            "minLength": 1,
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      },
-=======
->>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
       "User": {
         "type": "object",
         "properties": {

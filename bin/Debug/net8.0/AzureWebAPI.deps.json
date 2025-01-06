@@ -11,10 +11,6 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
-<<<<<<< HEAD
-          "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.0",
-=======
->>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
           "Swashbuckle.AspNetCore": "7.2.0"
         },
         "runtime": {
@@ -541,23 +537,6 @@
           }
         }
       },
-<<<<<<< HEAD
-      "Microsoft.Extensions.Caching.StackExchangeRedis/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Options": "9.0.0",
-          "StackExchange.Redis": "2.6.122"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53112"
-          }
-        }
-      },
-=======
->>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
       "Microsoft.Extensions.Configuration.Abstractions/9.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "9.0.0"
@@ -777,31 +756,6 @@
           }
         }
       },
-<<<<<<< HEAD
-      "Pipelines.Sockets.Unofficial/2.2.8": {
-        "dependencies": {
-          "System.IO.Pipelines": "9.0.0"
-        },
-        "runtime": {
-          "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "2.2.8.1080"
-          }
-        }
-      },
-      "StackExchange.Redis/2.6.122": {
-        "dependencies": {
-          "Pipelines.Sockets.Unofficial": "2.2.8"
-        },
-        "runtime": {
-          "lib/net6.0/StackExchange.Redis.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.6.122.38350"
-          }
-        }
-      },
-=======
->>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
       "Swashbuckle.AspNetCore/7.2.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -1305,16 +1259,6 @@
       "path": "microsoft.extensions.caching.memory/9.0.0",
       "hashPath": "microsoft.extensions.caching.memory.9.0.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-    "Microsoft.Extensions.Caching.StackExchangeRedis/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kyjUU0VujU4WcQoS/3EkMgTWIF4Trqfp2hDFSd21jnb0otyNXvDwx8dtMi37IwGt95imz34wEuTnFzSrPGb1tA==",
-      "path": "microsoft.extensions.caching.stackexchangeredis/8.0.0",
-      "hashPath": "microsoft.extensions.caching.stackexchangeredis.8.0.0.nupkg.sha512"
-    },
-=======
->>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
     "Microsoft.Extensions.Configuration.Abstractions/9.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1455,23 +1399,6 @@
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-    "Pipelines.Sockets.Unofficial/2.2.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==",
-      "path": "pipelines.sockets.unofficial/2.2.8",
-      "hashPath": "pipelines.sockets.unofficial.2.2.8.nupkg.sha512"
-    },
-    "StackExchange.Redis/2.6.122": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-wp7mvGpFXaevfZ07/SDeh/6YHUJEgwJIGyjbDWKBYbPwKMJQYFz9zFEmBptqtVzqvSgft5nlewwutoaMaG0LPA==",
-      "path": "stackexchange.redis/2.6.122",
-      "hashPath": "stackexchange.redis.2.6.122.nupkg.sha512"
-    },
-=======
->>>>>>> 588c1caba0119ae64bdea95fbcf0608a296adc98
     "Swashbuckle.AspNetCore/7.2.0": {
       "type": "package",
       "serviceable": true,
